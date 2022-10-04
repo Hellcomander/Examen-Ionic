@@ -1,0 +1,18 @@
+<ion-app>
+<header>
+<ion-title>Daniel Aranda Examen</ion-title>
+</header>
+
+
+<ion-content padding>
+<form>
+
+<ion-list>
+<ion-item button id = {{id}} (click)="resultOn(id-1)" *ngFor="let id of ques.id">{{ques.name[id-1]}}</ion-item>
+</ion-list>
+
+
+</form>
+
+</ion-content>
+</ion-app>
